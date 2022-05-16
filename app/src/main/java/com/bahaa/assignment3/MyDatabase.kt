@@ -11,6 +11,7 @@ class MyDatabase(val context: Context): SQLiteOpenHelper(context, "UserDatabase"
 
     override fun onCreate(db: SQLiteDatabase?) {
         db!!.execSQL(User.CREATE_TABLE)
+        // hello word
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
